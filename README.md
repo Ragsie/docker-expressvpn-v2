@@ -8,7 +8,7 @@ This container should be used as base layer.
 
 ## Download
 
-`docker pull polkaned/expressvpn`
+`docker pull dont/expressvpn`
 
 ## Start the container
 
@@ -21,7 +21,7 @@ This container should be used as base layer.
       --detach=true \
       --tty=true \
       --name=expressvpn \
-      polkaned/expressvpn \
+      dont/expressvpn \
       /bin/bash
 
 
@@ -32,7 +32,7 @@ In this case all traffic is routed via the vpn container. To reach the other con
   ```
   expressvpn:
     container_name: expressvpn
-    image: polkaned/expressvpn
+    image: dont/expressvpn
     environment:
       - ACTIVATION_CODE={% your-activation-code %}
       - SERVER={% LOCATION/ALIAS/COUNTRY %}
