@@ -1,7 +1,7 @@
 
 # Run expressvpn in a container
 
-FROM debian:buster-slim
+# FROM debian:buster-slim
 
 ENV ACTIVATION_CODE Code
 ENV LOCATION smart
